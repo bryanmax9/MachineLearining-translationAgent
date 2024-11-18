@@ -39,6 +39,19 @@ cd translation-agent
 poetry install
 poetry shell # activates virtual environment
 ```
+
+- Install required modules
+
+```
+pip install -r requirements.txt
+```
+
+- Start application
+
+```
+python app/app.py
+```
+
 ### Usage:
 
 ```python
