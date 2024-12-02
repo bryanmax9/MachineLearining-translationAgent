@@ -1,6 +1,8 @@
 import os
 import re
 from glob import glob
+import sys
+sys.path.append(os.path.abspath("../src"))
 
 import gradio as gr
 from process import (

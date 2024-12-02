@@ -246,9 +246,7 @@ def one_chunk_translate_text(
     Returns:
         str: The improved translation of the source text.
     """
-    translation_1 = one_chunk_initial_translation(
-        source_lang, target_lang, source_text
-    )
+    translation_1 = one_chunk_initial_translation(source_lang, target_lang, source_text)
 
     reflection = one_chunk_reflect_on_translation(
         source_lang, target_lang, source_text, translation_1, country
@@ -260,9 +258,7 @@ def one_chunk_translate_text(
     return translation_2
 
 
-def num_tokens_in_string(
-    input_str: str, encoding_name: str = "cl100k_base"
-) -> int:
+def num_tokens_in_string(input_str: str, encoding_name: str = "cl100k_base") -> int:
     """
     Calculate the number of tokens in a given string using a specified encoding.
 
